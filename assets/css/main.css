@@ -1676,7 +1676,6 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
 		}
 
 	strong, b {
@@ -1861,6 +1860,38 @@
 
 }
 
+.st:hover{
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.st1:hover{
+	color: #000000;
+}
+.st2:hover{
+	color: #fcaf45;
+}
+.st3:hover{
+	color: #53d769;
+}
+.st4:hover{
+	color: #17c5cb;
+}
+.st5:hover{
+	color: #405de6;
+}
+.st6:hover{
+	color: #0077B5;
+}
+.st7:hover{
+	color: tomato;
+}
 
 /* Icon */
 
