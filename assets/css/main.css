@@ -1693,7 +1693,7 @@
 
 	h1 {
 		font-size: 2.75em;
-		font-weight: 700;
+		font-weight: 500;
 		line-height: 1.3;
 		margin: 0 0 1em 0;
 		letter-spacing: -0.035em;
@@ -1955,7 +1955,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			margin: -1em 0 3em -1em;
+			margin: 0em 0 3em -1em;
 		}
 
 			ul.icons li {
@@ -2031,7 +2031,16 @@
 					}
 
 			@media screen and (max-width: 480px) {
-
+				.icon:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 1.25em;
+				text-transform: none !important;
+				margin-right: 20px;
+				}
 				ul.actions {
 					margin: 0 0 2em 0;
 				}
@@ -2341,7 +2350,8 @@
 	}
 
 		.image img {
-			border-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
 			display: block;
 		}
 
@@ -2390,6 +2400,16 @@
 				.image.main {
 					margin: 0 0 2em 0;
 				}
+								.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.75em;
+			text-transform: none !important;
+			margin-right: 20px;
+			}
 
 			}
 
@@ -2668,7 +2688,6 @@
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2760,7 +2779,7 @@
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #000000;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2863,8 +2882,11 @@
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 16em 0 0.1em 0 ;
 	}
+		#header .inner {
+			top:<;
+		}
 
 		#header .logo {
 			display: block;
@@ -2982,7 +3004,7 @@
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 4em 0 0.1em 0 ;
+				padding: 0em 0 0.1em 0 ;
 			}
 
 				#header nav {
@@ -3202,7 +3224,7 @@
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 0em 0 1em 0 ;
 		background-color: #f6f6f6;
 	}
 
@@ -3238,7 +3260,7 @@
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				margin-top: 4.2em;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
